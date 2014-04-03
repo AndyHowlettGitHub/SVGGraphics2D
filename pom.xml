@@ -5,7 +5,7 @@
 	<artifactId>svggraphics2d</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SVGGraphics2D</name>
-	<description>Extends Graphics2D so that output is redirected to an SVG structure.</description>
+	<description>Extends Graphics2D so that output is redirected to an SVG structure. Currently very basic.</description>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -24,6 +24,36 @@
 			<groupId>org.xml-cml</groupId>
 			<artifactId>svg-dev</artifactId>
 			<version>0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openscience.cdk</groupId>
+			<artifactId>cdk-render</artifactId>
+			<version>1.5.6-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openscience.cdk</groupId>
+			<artifactId>cdk-renderawt</artifactId>
+			<version>1.5.6-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openscience.cdk</groupId>
+			<artifactId>cdk-extra</artifactId>
+			<version>1.5.6-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.openscience.cdk</groupId>
+			<artifactId>cdk-sdg</artifactId>
+			<version>1.5.6-SNAPSHOT</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>

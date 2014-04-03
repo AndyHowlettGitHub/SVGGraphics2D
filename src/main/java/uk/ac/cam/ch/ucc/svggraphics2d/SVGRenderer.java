@@ -63,11 +63,11 @@ public class SVGRenderer extends Graphics2D {
 	private Color colour;
 	private BasicStroke awtStroke;
 	
-	public SVGRenderer(Graphics2D input) {
-		font = input.getFont();
-		cont = input.getFontRenderContext();
-		svg.setHeight(input.getDeviceConfiguration().getBounds().getHeight());
-		svg.setWidth(input.getDeviceConfiguration().getBounds().getWidth());
+	public SVGRenderer(Graphics2D baseForSizeAndFontReference) {
+		font = baseForSizeAndFontReference.getFont();
+		cont = baseForSizeAndFontReference.getFontRenderContext();
+		svg.setHeight(baseForSizeAndFontReference.getDeviceConfiguration().getBounds().getHeight());
+		svg.setWidth(baseForSizeAndFontReference.getDeviceConfiguration().getBounds().getWidth());
 	}
 	
 	@Override
