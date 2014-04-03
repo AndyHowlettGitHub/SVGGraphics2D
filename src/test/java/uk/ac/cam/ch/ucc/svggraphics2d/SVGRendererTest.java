@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,7 +59,7 @@ public class SVGRendererTest {
 		
 		renderer.paint(triazole, new AWTDrawVisitor(svgR));
 		
-		SVGUtil.debug(svgR.getSVG(), new FileOutputStream(new File("C:\\workspace\\triazole.svg")), 0);
+		SVGUtil.debug(svgR.getSVG(), new FileOutputStream(getClass().getResource("/uk/ac/cam/ch/ucc/svggraphics2d/").getFile() + "testOutputTriazole.svg"), 0);
 		
 		Assert.assertEquals("Test for number of SVG elements", 13, svgR.getSVG().getChildCount());
 	}
