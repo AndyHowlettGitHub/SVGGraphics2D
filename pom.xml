@@ -37,25 +37,25 @@
 		<dependency>
 			<groupId>org.openscience.cdk</groupId>
 			<artifactId>cdk-render</artifactId>
-			<version>1.5.5</version>
+			<version>1.5.7</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.openscience.cdk</groupId>
 			<artifactId>cdk-renderawt</artifactId>
-			<version>1.5.5</version>
+			<version>1.5.7</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.openscience.cdk</groupId>
 			<artifactId>cdk-extra</artifactId>
-			<version>1.5.5</version>
+			<version>1.5.7</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.openscience.cdk</groupId>
 			<artifactId>cdk-sdg</artifactId>
-			<version>1.5.5</version>
+			<version>1.5.7</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
